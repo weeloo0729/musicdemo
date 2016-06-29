@@ -1,0 +1,105 @@
+<ion-view view-title="我的音乐"  hide-nav-bar="true">
+    <i>由于文件过大歌曲只有示例可播放</i>
+    <ion-nav-buttons side="left">
+        <div class=" buttons right-buttons">
+            <a class="navbtn button button-clear icon ion-headphone"></a>
+            <a class="navbtn button button-clear icon ion-music-note"></a>
+            <a class="navbtn button button-clear icon ion-navicon"></a>
+            <a class="navbtn button button-clear icon ion-search"></a>
+        </div>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-input">
+                <div class="item-input-wrapper">
+                    <lable class="icon ion-search">搜索</lable>
+                    <input class=" text-center" type="text" placeholder="周杰伦">
+                    <a class="button icon ion-search" href="#/tabs/search"></a>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="indeximg row text-center">
+                    <a class="col" href="#/tabs/thismusic">
+                        <img class="img" src="images/bdgq.png">
+                        <p>本地歌曲</p>
+                    </a>
+                    <a class="col" href="#/tabs/downloadmusic">
+                        <img class="img" src="images/xzgq.png">
+                        <p>下载歌曲</p>
+                    </a>
+                    <a class="col" href="#/tabs/latelymusic">
+                        <img class="img" src="images/zjbf.png">
+                        <p>最近播放</p>
+                    </a>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="indeximg row text-center">
+                    <a class="col" href="#/tabs/lovemusic">
+                        <img class="img" src="images/wxh.png">
+                        <p>我喜欢</p>
+                    </a>
+                    <a class="col" href="#/tabs/downloadvideo">
+                        <img class="img" src="images/xzmv.png">
+                        <p>下载MV</p>
+                    </a>
+                    <a class="col" href="#/tabs/discernsong">
+                        <img class="img" src="images/tgsq.png">
+                        <p>听歌识曲</p>
+                    </a>
+                </div>
+            </ion-item>
+            <ion-item>
+                <span>我的歌单</span>
+                <i class="mygedan">2<span class="icon ion-chevron-right"></span></i>
+            </ion-item>
+            <a class="item item-avatar-left" ng-click="showzjl()">
+                <img src="images/gd/zjl.png">
+                <span>周杰伦</span>
+            </a>
+            <ion-item style="{{zjl}}">
+                    <ion-list>
+                        <ion-item class="item-avatar-left">
+                            <img src="images/gd/zjl2.png">
+                            <h2>安静</h2>
+                            <p>周杰伦</p>
+                        </ion-item>
+                        <ion-item class="item-avatar-left">
+                            <img src="images/gd/zjl2.png">
+                            <h2>白色的风车</h2>
+                            <p>周杰伦</p>
+                        </ion-item>
+                        <ion-item class="item-avatar-left">
+                            <img src="images/gd/zjl.png">
+                            <h2>黑色毛衣</h2>
+                            <p>周杰伦</p>
+                        </ion-item>
+                        <ion-item class="item-avatar-left">
+                            <img src="images/gd/zjl.png">
+                            <h2>七里香</h2>
+                            <p>周杰伦</p>
+                        </ion-item>
+                        <ion-item class="item-avatar-left">
+                            <img src="images/gd/zjl.png">
+                            <h2>彩虹</h2>
+                            <p>周杰伦</p>
+                        </ion-item>
+                    </ion-list>
+            </ion-item>
+
+            <a class="item item-avatar-left" ng-click="showom()">
+                <img src="images/gd/gd1.png">
+                <span>欧美歌曲</span>
+            </a>
+            <ion-item style="{{om}}">
+                <ion-list>
+                    <ion-item class="item-avatar-left">
+                        <img src="images/gd/gd1.png">
+                        <h2>ligths</h2>
+                        <p>Ellie Goulding</p>
+                    </ion-item>
+                </ion-list>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

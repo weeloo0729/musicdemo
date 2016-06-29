@@ -1,0 +1,16 @@
+<ion-view view-title="我的音乐我做主" id="tour-view">
+    <!--// 当显示到这个子页面的时候，会用这个按钮组加入原来导航栏内容-->
+    <ion-nav-buttons side="left">
+        <button class="button button-clear" ui-sref="tabs.home" ng-click="showfooter()" ng-if="isShow"><span id="login">dO It</span></button>
+    </ion-nav-buttons>
+    <ion-slide-box class="tourslide" show-pager="true" on-slide-changed="onSlideChanged($index)">
+        <ion-slide class="tourslidelist">
+            <img src="images/wsgs2.jpg">
+            <div class="tookbtn"><<<</div>
+        </ion-slide>
+        <ion-slide class="tourslidelist">
+            <img src="images/tour1.jpg">
+            <div id="tookbtn" class="tookbtn"><<<</div>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>
